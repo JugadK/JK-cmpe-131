@@ -24,11 +24,11 @@ calculate_apr(500.0,0.03,65)
 calculate_apr(534.0,0.07,65)
 43399.7079046
     """
-    if(not isinstance(principle,float)):
+    if(not isinstance(principle,float) and not isinstance(principle,int)  ):
         return False
-    if(not isinstance(interest_rate,float)):
+    if(not isinstance(interest_rate,float) and not isinstance(interest_rate,int)):
         return False
-    if(not isinstance(years,int)):
+    if(not isinstance(years,int) and not isinstance(years,float)):
         return False
     
     number = 0
@@ -39,6 +39,6 @@ calculate_apr(534.0,0.07,65)
 
 
 
-print(calculate_apr(500.0,0.03,65))
+print(calculate_apr(500,0.03,1))
 print(calculate_apr(534.0,0.07,65))
 print(calculate_apr('afdsf',0.03,65))
