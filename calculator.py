@@ -70,9 +70,12 @@ def calculator(number1,number2,operator):
         number2 = float(number2)
     except ValueError as e:
         return False
+
+        #This checks whether or not the operator is valid 
     for i in array:
         if(i == operator):
             validOperator = True
+        #If the operator is not valid it just returns false
     if(validOperator == False):
         return False
     if(operator == '+'):
