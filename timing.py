@@ -11,7 +11,7 @@ def calculate_time(func):
         function that will be used between the two variables measuring the current time
     
     Returns
-    float
+    floats
         difference between the two time measurments
     Examples
     --------
@@ -20,7 +20,7 @@ def calculate_time(func):
         time.sleep(4)
     4.00003456
     """
-    def wrapper():
+    def wrapper(n):
         """
         Wrapper function for calculate time 
 
@@ -32,19 +32,19 @@ def calculate_time(func):
         """
         time1 = time.time()
         
-        func()
+        func(2)
         time2 = time.time()
         return 'Total time ' + str((time2-time1))
     return wrapper
 
 @calculate_time
-def get_time():
+def get_time(n):
     """
 
     function that will we run inside the calculate_time decorator
 
     This function currently has the time.sleep function in order to stop the decorator function for two seconds so we can measure the time of thise function accurately. as we kow it must be around 2 seconds 
     """
-    time.sleep(2)
-print(get_time())
+    time.sleep(n)
+print(get_time(2))
 
