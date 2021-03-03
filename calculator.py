@@ -15,11 +15,11 @@ def input_output():
     False
 
     """
-    number1 = raw_input("Enter the first number: ")
-    number2 = raw_input("Enter the second number: ")
-    operator = raw_input("Enter the operation: ")
+    number1 = input("Enter the first number: ")
+    number2 = input("Enter the second number: ")
+    operator = input("Enter the operation: ")
     print(calculator(number1,number2,operator))
-    exitChoice = raw_input("\nDo you wish to exit? ")
+    exitChoice = input("\nDo you wish to exit? ")
     if(exitChoice == "n"):
         return True
     else:
