@@ -30,6 +30,8 @@ calculate_apr(534.0,0.07,65)
         return False
     if(not isinstance(years,int) and not isinstance(years,float)):
         return False
+    if(interest_rate < 0):
+        return False
     
     number = 0
     while(number < years):
