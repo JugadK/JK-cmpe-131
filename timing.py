@@ -34,8 +34,8 @@ def calculate_time(func):
         
         func()
         time2 = time.time()
-        return 'Total time ' + str((time2-time1))
-    return wrapper
+        print('Total time ' + str((time2-time1)))
+  
 
 @calculate_time
 def get_time():
@@ -46,5 +46,5 @@ def get_time():
     This function currently has the time.sleep function in order to stop the decorator function for two seconds so we can measure the time of thise function accurately. as we kow it must be around 2 seconds 
     """
     time.sleep(2)
-print(get_time())
+
 
