@@ -20,7 +20,6 @@ def calculate_time(func):
         time.sleep(4)
     4.00003456
     """
-    @functools.wraps(func)
     def wrapper():
         """
         Wrapper function for calculate time 
