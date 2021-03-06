@@ -34,7 +34,7 @@ def calculate_time(func):
         
         value = func(*args,**kwargs)
         time2 = time.time()
-        return 'Total time ' + str((time2-time1))
+        print('Total time ' + str((time2-time1)))
         return value
     return wrapper
 
