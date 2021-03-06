@@ -15,15 +15,16 @@ def input_output():
     False
 
     """
-    number1 = input("Enter the first number: ")
-    number2 = input("Enter the second number: ")
-    operator = input("Enter the operation: ")
-    print(calculator(number1,number2,operator))
-    exitChoice = input("\nDo you wish to exit? ")
-    if(exitChoice == "n"):
-        return True
-    else:
-        return False
+    while(true == true):
+        number1 = input("Enter the first number: ")
+        number2 = input("Enter the second number: ")
+        operator = input("Enter the operation: ")
+        print(calculator(number1,number2,operator))
+        exitChoice = input("\nDo you wish to exit? ")
+        if(exitChoice == "n"):
+            break
+        else:
+            return False
 
 def calculator(number1,number2,operator):
     """
@@ -91,10 +92,7 @@ def calculator(number1,number2,operator):
     if(operator == '**'):
         return number1**number2
     
-continue_calculator = True
-while(continue_calculator == True):
-    if(input_output() == False):
-        continue_calculator = False
+
 
 
     
